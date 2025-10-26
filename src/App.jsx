@@ -5,7 +5,7 @@ import AllCertifications from './pages/AllCertifications';
 import AllProjects from './pages/AllProjects';
 
 export default function App() {
-  const basename = import.meta.env.PROD ? '/danie_portfolio' : '/';
+  const basename = import.meta.env.PROD ? '/Dg-s' : '/';
   
   return (
     <Router basename={basename}>
