@@ -8,7 +8,8 @@ export default function Hero() {
 
   const handleTap = (e) => {
     e.preventDefault();
-    setIsTapped(!isTapped);
+    e.stopPropagation();
+    setIsTapped(prev => !prev);
   };
   
   const showAlternateImage = isHovered || isTapped;
