@@ -6,11 +6,8 @@ export default function Hero() {
   const [isHovered, setIsHovered] = useState(false);
   const [isTapped, setIsTapped] = useState(false);
 
-  const handleTap = () => {
-    setIsTapped(!isTapped);
-  };
-  
-  const handleTouchStart = () => {
+  const handleTap = (e) => {
+    e.preventDefault();
     setIsTapped(!isTapped);
   };
   
@@ -40,13 +37,13 @@ export default function Hero() {
         
         {/* Profile Image */}
         <div
-          className="relative w-28 h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 flex-shrink-0 cursor-pointer rounded-2xl overflow-hidden shadow-lg transition-all duration-300 active:scale-95 touch-target"
+          className="relative w-28 h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 flex-shrink-0 cursor-pointer rounded-2xl overflow-hidden shadow-lg transition-all duration-300 active:scale-95 touch-target select-none"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           onClick={handleTap}
-          onTouchStart={handleTouchStart}
           role="button"
-          aria-label="Tap to see alternate profile photo"
+          tabIndex={0}
+          aria-label="Tap to toggle profile photo"
         >
           <img
             src={`${import.meta.env.BASE_URL}profile.jpg`}
