@@ -7,13 +7,14 @@ export default function Hero() {
   const [isTapped, setIsTapped] = useState(false);
 
   const handleTap = () => {
-    setIsTapped(prev => {
-      console.log('Toggling from', prev, 'to', !prev); // Debug
-      return !prev;
-    });
+    setIsTapped(prev => !prev);
+    // Reset hover state to prevent conflicts
+    setIsHovered(false);
   };
   
-  const showAlternateImage = isHovered || isTapped;
+  // Show alternate image if either tapped or hovered
+  // But prioritize tap state on mobile
+  const showAlternateImage = isTapped || isHovered;
 
   const scrollToContent = () => {
     window.scrollTo({
@@ -39,8 +40,8 @@ export default function Hero() {
         
         {/* Profile Image */}
         <div
-          className="relative w-28 h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 flex-shrink-0 cursor-pointer rounded-2xl overflow-hidden shadow-lg transition-all duration-300 active:scale-95 touch-target select-none"
-          onMouseEnter={() => setIsHovered(true)}
+          className="relative w-28 h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 flex-shrink-0 cursor-pointer rounded-2xl overflow-hidden shadow-lg transition-all duration-300 active:scale-95 touch-target select-none touch-manipulation"
+          onMouseEnter={() => !isTapped && setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           onPointerDown={handleTap}
           role="button"
