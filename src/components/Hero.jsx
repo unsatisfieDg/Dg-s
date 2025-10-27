@@ -39,14 +39,14 @@ export default function Hero() {
           onClick={handleTap}
         >
           <img
-            src="/profile.jpg"
+            src={`${import.meta.env.BASE_URL}profile.jpg`}
             alt="Danie Glenn Sapdaan Jr."
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
               showAlternateImage ? 'opacity-0' : 'opacity-100'
             }`}
           />
           <img
-            src="/profile-hover.jpg"
+            src={`${import.meta.env.BASE_URL}profile-hover.jpg`}
             alt="Danie Glenn Sapdaan Jr. - Alternate"
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
               showAlternateImage ? 'opacity-100' : 'opacity-0'
@@ -77,7 +77,7 @@ export default function Hero() {
           {/* Buttons - Stacked on mobile, side by side on desktop */}
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-3 sm:gap-4 mt-4 sm:mt-6">
             <a
-              href="/RESUME.pdf"
+              href={`${import.meta.env.BASE_URL}RESUME.pdf`}
               download
               className="px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 bg-black dark:bg-white text-white dark:text-black rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors flex items-center justify-center gap-2 font-medium text-xs sm:text-sm md:text-base"
             >
