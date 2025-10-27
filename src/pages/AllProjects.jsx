@@ -26,30 +26,6 @@ export default function AllProjects() {
       url: "github.com/unsatisfieDg/Coffee-Shop-Reservation-Website-First-Full-Stack-project-as-a-student-",
       tags: ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3"],
       image: "https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=800&q=80"
-    },
-    {
-      name: "E-Commerce Platform",
-      type: "Web App",
-      description: "Full-stack online store with payment integration",
-      url: "github.com/unsatisfieDg/",
-      tags: ["React", "Node.js", "MongoDB"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
-    },
-    {
-      name: "Task Management App",
-      type: "Web App",
-      description: "Collaborative project management tool with real-time updates",
-      url: "github.com/unsatisfieDg/",
-      tags: ["Vue.js", "Firebase", "Tailwind"],
-      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80"
-    },
-    {
-      name: "Analytics Dashboard",
-      type: "Web App",
-      description: "Real-time data visualization and reporting system",
-      url: "github.com/unsatisfieDg/",
-      tags: ["React", "D3.js", "Express"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
     }
   ];
 
