@@ -8,7 +8,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    scroll-behavior: smooth;
   }
 
   /* Safe area for iPhone X and newer (notch support) */

@@ -27,12 +27,10 @@ export default function Home() {
       const id = location.hash.replace('#', '');
       const element = document.getElementById(id);
       if (element) {
-        setTimeout(() => {
-          // Offset to show some content above the section for better context
-          const yOffset = -200; // Show content above the section
-          const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-          window.scrollTo({ top: y, behavior: 'auto' }); // Instant jump, no smooth scroll
-        }, 0);
+        // Instant scroll to section without animation
+        const yOffset = -200; // Show content above the section
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'instant' });
       }
     }
   }, [location]);
@@ -248,10 +246,6 @@ export default function Home() {
           transform: translateY(0);
         }
 
-        /* Smooth scroll behavior */
-        html {
-          scroll-behavior: smooth;
-        }
 
         /* Add staggered delay for items within the same section */
         .fade-in-scroll:nth-child(1) {
