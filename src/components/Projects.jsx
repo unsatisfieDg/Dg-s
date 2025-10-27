@@ -8,6 +8,7 @@ export default function Projects() {
   const projects = [
     {
       name: "MacroGenius",
+      type: "Mobile App",
       description: "Smart Nutrition Tracker - React Native mobile app with barcode scanning, personalized macro calculations, food database with 200+ items, and daily goal tracking with streaks",
       url: "github.com/unsatisfieDg/MacroGenius",
       tags: ["React Native", "Mobile App", "Nutrition"],
@@ -15,6 +16,7 @@ export default function Projects() {
     },
     {
       name: "Coffee Shop Reservation",
+      type: "Web App",
       description: "Full-stack reservation website with secure authentication, table booking system, and responsive design. Features password hashing, SQL injection prevention, and session management",
       url: "github.com/unsatisfieDg/Coffee-Shop-Reservation-Website-First-Full-Stack-project-as-a-student-",
       tags: ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3"],
@@ -22,6 +24,7 @@ export default function Projects() {
     },
     {
       name: "E-Commerce Platform",
+      type: "Web App",
       description: "Full-stack online store with payment integration",
       url: "github.com/unsatisfieDg/",
       tags: ["React", "Node.js", "MongoDB"],
@@ -29,12 +32,20 @@ export default function Projects() {
     },
     {
       name: "Task Management App",
+      type: "Web App",
       description: "Collaborative project management tool with real-time updates",
       url: "github.com/unsatisfieDg/",
       tags: ["Vue.js", "Firebase", "Tailwind"],
       image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80"
     },
- 
+    {
+      name: "Analytics Dashboard",
+      type: "Web App",
+      description: "Real-time data visualization and reporting system",
+      url: "github.com/unsatisfieDg/",
+      tags: ["React", "D3.js", "Express"],
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+    }
   ];
 
   const displayedProjects = projects.slice(0, 2);
@@ -82,7 +93,7 @@ export default function Projects() {
               {/* Top Section - Label */}
               <div>
                 <span className="inline-block px-2 py-0.5 text-[10px] font-medium bg-blue-500/20 text-blue-400 rounded-full border border-blue-500/30">
-                  Web App
+                  {project.type}
                 </span>
               </div>
               
