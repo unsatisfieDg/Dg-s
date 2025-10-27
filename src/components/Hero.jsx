@@ -48,14 +48,14 @@ export default function Hero() {
           <img
             src={`${import.meta.env.BASE_URL}profile.jpg`}
             alt="Danie Glenn Sapdaan Jr."
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 pointer-events-none ${
               showAlternateImage ? 'opacity-0' : 'opacity-100'
             }`}
           />
           <img
             src={`${import.meta.env.BASE_URL}profile-hover.jpg`}
             alt="Danie Glenn Sapdaan Jr. - Alternate"
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 pointer-events-none ${
               showAlternateImage ? 'opacity-100' : 'opacity-0'
             }`}
           />
