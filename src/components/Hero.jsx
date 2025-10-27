@@ -6,10 +6,11 @@ export default function Hero() {
   const [isHovered, setIsHovered] = useState(false);
   const [isTapped, setIsTapped] = useState(false);
 
-  const handleTap = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setIsTapped(prev => !prev);
+  const handleTap = () => {
+    setIsTapped(prev => {
+      console.log('Toggling from', prev, 'to', !prev); // Debug
+      return !prev;
+    });
   };
   
   const showAlternateImage = isHovered || isTapped;
@@ -41,7 +42,7 @@ export default function Hero() {
           className="relative w-28 h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 flex-shrink-0 cursor-pointer rounded-2xl overflow-hidden shadow-lg transition-all duration-300 active:scale-95 touch-target select-none"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          onClick={handleTap}
+          onPointerDown={handleTap}
           role="button"
           tabIndex={0}
           aria-label="Tap to toggle profile photo"
