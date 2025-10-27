@@ -47,8 +47,6 @@ export default function TechStack() {
         {/* Desktop View - Orbital Animation */}
         <div className="hidden lg:block relative flex-shrink-0 overflow-hidden" style={{ width: '240px', height: '280px' }}>
           <div className="absolute -right-28 top-1/2 -translate-y-1/2 w-72 h-72">
-            {/* Outer Orbit Ring */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-full opacity-40"></div>
             {outerOrbit.map((tech, index) => (
               <div
                 key={tech.name}
@@ -67,8 +65,6 @@ export default function TechStack() {
               </div>
             ))}
 
-            {/* Inner Orbit Ring */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 border-2 border-dashed border-gray-400 dark:border-gray-500 rounded-full opacity-40"></div>
             {innerOrbit.map((tech, index) => (
               <div
                 key={tech.name}
@@ -93,8 +89,6 @@ export default function TechStack() {
       {/* Mobile View - Orbital Animation */}
       <div className="lg:hidden relative h-64 mt-4 overflow-hidden">
         <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-56 h-56">
-          {/* Outer Orbit Ring */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-full opacity-40"></div>
           {outerOrbit.map((tech, index) => (
             <div
               key={tech.name}
@@ -113,8 +107,6 @@ export default function TechStack() {
             </div>
           ))}
 
-          {/* Inner Orbit Ring */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 border-2 border-dashed border-gray-400 dark:border-gray-500 rounded-full opacity-40"></div>
           {innerOrbit.map((tech, index) => (
             <div
               key={tech.name}
