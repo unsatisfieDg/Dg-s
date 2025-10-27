@@ -11,7 +11,7 @@ export default function Projects() {
       type: "Mobile App",
       description: "Smart Nutrition Tracker - React Native mobile app with barcode scanning, personalized macro calculations, food database with 200+ items, and daily goal tracking with streaks",
       url: "github.com/unsatisfieDg/MacroGenius",
-      tags: ["React Native", "Mobile App", "Nutrition"],
+      tags: ["React Native", "JavaScript"],
       image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80"
     },
     {
