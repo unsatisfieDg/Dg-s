@@ -1,6 +1,7 @@
 {
   "name": "danie-portfolio",
   "version": "1.0.0",
+  "description": "A personal portfolio website for Danie Glenn Sapdaan Jr., showcasing software engineering projects and certifications.",
   "private": true,
   "type": "module",
   "scripts": {
