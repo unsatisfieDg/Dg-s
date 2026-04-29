@@ -9,9 +9,9 @@ export default function Projects() {
     {
       name: "MacroGenius",
       type: "Mobile App",
-      description: "Smart Nutrition Tracker - React Native mobile app with barcode scanning, personalized macro calculations, food database with 200+ items, and daily goal tracking with streaks",
+      description: "Smart Nutrition Tracker - React Native mobile app with barcode scanning, personalized macro calculations, SQLite offline database (9k+ items), Hybrid AI Assistant, and daily goal tracking with streaks. Currently upgrading with new and better functionalities.",
       url: "github.com/unsatisfieDg/MacroGenius",
-      tags: ["React Native", "JavaScript"],
+      tags: ["React Native", "JavaScript", "SQLite", "AI"],
       image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80"
     },
     {

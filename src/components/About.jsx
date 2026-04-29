@@ -17,7 +17,7 @@ export default function About() {
           I'm continuously exploring emerging technologies, including AI and the metaverse, to 
           enhance how people interact with technology. My goal is to combine creativity and 
           technical expertise with problem-solving ability and a team-oriented mindset 
-          to develop solutions that make a real impact.
+          to develop solutions that make a real impact. I am also working on a new and better functions to further improve my current projects.
         </p>
       </div>
     </div>
