@@ -9,7 +9,7 @@ export default function Projects() {
     {
       name: "MacroGenius",
       type: "Mobile App",
-      description: "Smart Nutrition Tracker - React Native mobile app with barcode scanning, personalized macro calculations, SQLite offline database (9k+ items), Hybrid AI Assistant, and daily goal tracking with streaks. Currently upgrading with new and better functionalities.",
+      description: "A nutrition tracking app for iOS and Android. It handles calorie and macro calculations, barcode scanning for easy logging, and includes an offline database with over 9,000 items. I am currently adding new features and improving existing ones.",
       url: "github.com/unsatisfieDg/MacroGenius",
       tags: ["React Native", "JavaScript", "SQLite", "AI"],
       image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80"
@@ -17,7 +17,7 @@ export default function Projects() {
     {
       name: "Coffee Shop Reservation",
       type: "Web App",
-      description: "Full-stack reservation website with secure authentication, table booking system, and responsive design. Features password hashing, SQL injection prevention, and session management",
+      description: "A full-stack reservation system for a coffee shop. It includes secure user accounts, a table booking feature, and a responsive design. Built as my first full-stack project to practice backend logic and database management.",
       url: "github.com/unsatisfieDg/Coffee-Shop-Reservation-Website-First-Full-Stack-project-as-a-student-",
       tags: ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3"],
       image: "https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=800&q=80"
@@ -30,7 +30,7 @@ export default function Projects() {
     <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-4 sm:p-6">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
-          <span>🚀</span> Projects
+          Projects
         </h2>
 
         <Link 

@@ -59,7 +59,7 @@ export default function Certifications() {
     <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-4 sm:p-6">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
-          <span>🎓</span> Certifications
+          Certifications
         </h2>
         {certifications.length > 4 && (
           <Link 
