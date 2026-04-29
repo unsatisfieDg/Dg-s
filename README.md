@@ -1,213 +1,92 @@
-# 🚀 Danie Glenn Sapdaan Jr. - Portfolio
+# Danie Glenn Sapdaan Jr. - Portfolio
 
-A modern, responsive portfolio website showcasing my projects, certifications, and skills as a Software Engineer.
+A responsive portfolio website that showcases my projects, certifications, and technical skills as a software engineer.
 
 ![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-## ✨ Features
+## Features
 
-### 🎨 Modern Design
-- Clean, minimal UI with dark mode support
-- Smooth animations and transitions
-- Parallax scrolling effects
-- Responsive design for all devices (mobile, tablet, desktop)
+### Design and Layout
+- A clean and minimal interface with support for dark mode.
+- Includes smooth animations, transitions, and parallax scrolling.
+- Fully responsive design that adapts to mobile, tablet, and desktop screens.
 
-### 📱 Fully Responsive
-Optimized for all screen sizes:
-- 📱 **Mobile**: iPhone X to latest iPhone models (375px - 430px)
-- 📱 **Tablets**: iPad Mini, iPad Air (768px - 1024px)
-- 💻 **Laptops**: Standard laptops (1024px - 1439px)
-- 🖥️ **Desktops**: Large monitors (1440px+)
+### Navigation
+- A main home page with access to all sections.
+- Separate pages for a full list of certifications and projects.
+- Internal links that scroll directly to the relevant sections of the site.
 
-### 🧭 Multi-Page Navigation
-- Home page with all sections
-- Dedicated Certifications page
-- Dedicated Projects page
-- Smooth hash-based navigation
-- "Back to Home" with section scrolling
+### Key Sections
+- **Hero**: Introduction with a profile photo, resume download, and contact options.
+- **About**: A summary of my professional background and career goals.
+- **Tech Stack**: A visual display of the technologies I work with.
+- **Projects**: Highlights of my recent work with detailed descriptions.
+- **Certifications**: A list of professional certifications with links to verify them.
+- **Experience**: A timeline of my education and professional history.
+- **Interests**: A section about my personal hobbies and life outside of coding.
 
-### 🌓 Dark Mode
-- Toggle switch with smooth transitions
-- Persists preference in local storage
-- System preference detection
-- Optimized for mobile and desktop
-
-### 🎯 Key Sections
-- **Hero**: Profile, resume download, email contact
-- **About**: Professional summary and goals
-- **Tech Stack**: Animated orbital display of technologies
-- **Projects**: Featured projects with hover effects
-- **Certifications**: Professional certifications with links
-- **Experience**: Timeline of education and work
-- **Outside World**: Personal interests and hobbies
-
-## 🛠️ Tech Stack
+## Technical Details
 
 ### Frontend
-- **React 18** - Modern UI library
-- **Vite** - Fast build tool and dev server
-- **Tailwind CSS** - Utility-first CSS framework
-- **React Router** - Client-side routing
-- **Lucide React** - Beautiful icon library
+- **React 18** for building the user interface.
+- **Vite** for fast development and building.
+- **Tailwind CSS** for efficient and consistent styling.
+- **React Router** for handling page navigation.
+- **Lucide React** for icons and visual elements.
 
-### Deployment
-- **GitHub Pages** - Static site hosting
-- **GitHub Actions** - Automated deployment
+### Hosting
+- Hosted on **GitHub Pages** with automatic deployment through **GitHub Actions**.
 
-## 🚀 Quick Start
+## Getting Started
 
 ### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
+- Node.js version 16 or higher.
 
-### Installation
-
-1. **Clone the repository**
+### Installation and Development
 ```bash
-git clone https://github.com/unsatisfieDg/danie_portfolio.git
-cd danie_portfolio
-```
+# Clone the repository
+git clone https://github.com/unsatisfieDg/Dg-s.git
+cd Dg-s
 
-2. **Install dependencies**
-```bash
+# Install the necessary dependencies
 npm install
-```
 
-3. **Start development server**
-```bash
+# Run the development server
 npm run dev
 ```
 
-4. **Open in browser**
-```
-http://localhost:5173
-```
-
-### Build for Production
-
+### Building for Production
 ```bash
+# Create a production build
 npm run build
 ```
+The output will be generated in the `dist` folder, ready for deployment.
 
-The build output will be in the `dist` folder.
+## Customization
+- **Profile Info**: Update your photos and resume in the `public` folder and modify `Hero.jsx`.
+- **Projects and Certifications**: Edit the data arrays in the corresponding component files.
+- **Tech Stack**: Update the technology list in the `TechStack.jsx` file.
 
-### Preview Production Build
+## Performance
+- Implemented lazy loading for images.
+- Optimized bundle size for faster loading.
+- High-performance animations targeting 60fps.
 
-```bash
-npm run preview
-```
-
-## 📁 Project Structure
-
-```
-danie_portfolio/
-├── public/
-│   ├── profile.jpg           # Main profile photo
-│   ├── profile-hover.jpg     # Alternate profile photo (on hover)
-│   └── RESUME.pdf            # Resume file for download
-├── src/
-│   ├── components/
-│   │   ├── About.jsx         # About section
-│   │   ├── Certifications.jsx # Certifications section
-│   │   ├── DarkModeToggle.jsx # Dark mode toggle button
-│   │   ├── Footer.jsx        # Footer with social links
-│   │   ├── Hero.jsx          # Hero section with profile
-│   │   ├── Projects.jsx      # Projects section
-│   │   └── TechStack.jsx     # Tech stack with orbital animation
-│   ├── pages/
-│   │   ├── Home.jsx          # Main home page
-│   │   ├── AllCertifications.jsx # All certifications page
-│   │   └── AllProjects.jsx   # All projects page
-│   ├── App.jsx               # Main app with routing
-│   ├── main.jsx              # React entry point
-│   └── index.css             # Global styles
-├── index.html                # HTML entry point
-├── package.json              # Dependencies and scripts
-├── tailwind.config.js        # Tailwind configuration
-├── postcss.config.js         # PostCSS configuration
-└── vite.config.js            # Vite configuration
-```
-
-## 🎨 Customization
-
-### Update Profile Information
-1. Replace `public/profile.jpg` with your profile photo
-2. Replace `public/profile-hover.jpg` with an alternate photo
-3. Replace `public/RESUME.pdf` with your resume
-4. Update personal information in `src/components/Hero.jsx`
-
-### Add/Edit Projects
-Edit the `projects` array in:
-- `src/components/Projects.jsx` (home page)
-- `src/pages/AllProjects.jsx` (projects page)
-
-### Add/Edit Certifications
-Edit the `certifications` array in:
-- `src/components/Certifications.jsx` (home page)
-- `src/pages/AllCertifications.jsx` (certifications page)
-
-### Update Tech Stack
-Edit the `techStack` object in `src/components/TechStack.jsx`
-
-## 📝 Key Features Details
-
-### Orbital Tech Stack Animation
-The Tech Stack section features a custom CSS animation that displays technologies in orbiting circles, creating a dynamic and visually appealing effect.
-
-### Smart Navigation
-- Click "View All" on Certifications/Projects to see full lists
-- "Back to Home" links scroll directly to relevant sections
-- Smooth parallax effects on scroll
-
-### Performance Optimized
-- Lazy loading images
-- Optimized bundle size
-- Fast initial page load
-- Smooth 60fps animations
-
-## 🌐 Deployment
-
-This portfolio is configured for deployment to GitHub Pages.
-
-### Deploy to GitHub Pages
-
-1. **Update `vite.config.js`** with your repository name:
-```javascript
-export default defineConfig({
-  base: '/your-repo-name/',
-})
-```
-
-2. **Build and deploy**:
-```bash
-npm run build
-npm run deploy
-```
-
-Or use GitHub Actions for automatic deployment on push to main branch.
-
-## 📧 Contact
-
+## Contact Information
 - **Email**: sapdaandg02@gmail.com
 - **LinkedIn**: [linkedin.com/in/DgSapdaan](https://linkedin.com/in/DgSapdaan)
 - **GitHub**: [github.com/unsatisfieDg](https://github.com/unsatisfieDg)
-- **Instagram**: [@pulispang.kalawakan](https://instagram.com/pulispang.kalawakan)
+- **Instagram**: @pulispang.kalawakan
 
-## 📄 License
+## License
+This project is open-source and released under the MIT License.
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgments
-
-- Icons by [Lucide React](https://lucide.dev)
-- Images from [Unsplash](https://unsplash.com)
-- Built with [React](https://react.dev) + [Vite](https://vitejs.dev)
-- Styled with [Tailwind CSS](https://tailwindcss.com)
+## Credits
+- Icons provided by Lucide React.
+- Images sourced from Unsplash.
+- Built using React, Vite, and Tailwind CSS.
 
 ---
-
-**⭐ If you found this portfolio helpful or inspiring, please consider giving it a star!**
-
-*Made with ❤️ and ☕ by Danie Glenn Sapdaan Jr.*
+**Thank you for visiting my portfolio.**
