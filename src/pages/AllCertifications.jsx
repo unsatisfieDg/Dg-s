@@ -12,7 +12,7 @@ export default function AllCertifications() {
     {
       title: "Diploma in Bachelor of Science in Information Technology",
       issuer: "University of Northern Philippines",
-      credentialUrl: "https://your-diploma-credential-url.com"
+      credentialUrl: "DIPLOMA.jpeg"
     },
     {
       title: "Artificial Intelligence Fundamentals",
@@ -82,7 +82,7 @@ export default function AllCertifications() {
           {certifications.map((cert, index) => (
             <a
               key={index}
-              href={cert.credentialUrl}
+              href={cert.credentialUrl.startsWith('http') ? cert.credentialUrl : `${import.meta.env.BASE_URL}${cert.credentialUrl}`}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-4 sm:p-5 md:p-6 hover:shadow-lg hover:border-blue-500 dark:hover:border-blue-400 transition-all cursor-pointer group active:scale-[0.98]"

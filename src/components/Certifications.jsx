@@ -7,7 +7,7 @@ export default function Certifications() {
    {
       title: "Diploma in Bachelor of Science in Information Technology",
       issuer: "University of Northern Philippines",
-      credentialUrl: "https://your-diploma-credential-url.com" // Replace with your actual credential URL
+      credentialUrl: "DIPLOMA.jpeg"
     },
     {
       title: "Artificial Intelligence Fundamentals",
@@ -72,10 +72,10 @@ export default function Certifications() {
       </div>
       
       <div className="space-y-3">
-        {displayedCertifications.map((cert, index) => (
+          {displayedCertifications.map((cert, index) => (
           <a
             key={index}
-            href={cert.credentialUrl}
+            href={cert.credentialUrl.startsWith('http') ? cert.credentialUrl : `${import.meta.env.BASE_URL}${cert.credentialUrl}`}
             target="_blank"
             rel="noopener noreferrer"
             className="block bg-gray-50 dark:bg-gray-700/50 rounded-lg p-3 sm:p-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors cursor-pointer group"
