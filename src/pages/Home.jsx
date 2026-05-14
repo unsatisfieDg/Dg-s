@@ -61,25 +61,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950 transition-colors overflow-x-hidden">
-      {/* Parallax Background Layers */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        {/* Layer 1 - Slowest */}
-        <div 
-          className="absolute w-full h-full opacity-5"
-          style={{
-            transform: `translateY(${scrollY * 0.2}px)`,
-            background: 'radial-gradient(circle at 20% 50%, #8B5CF6 0%, transparent 50%)'
-          }}
-        />
-        {/* Layer 2 - Medium */}
-        <div 
-          className="absolute w-full h-full opacity-5"
-          style={{
-            transform: `translateY(${scrollY * 0.4}px)`,
-            background: 'radial-gradient(circle at 80% 20%, #EC4899 0%, transparent 50%)'
-          }}
-        />
-      </div>
+      {/* Hero Section - Parallax Effect - FULL SCREEN */}
 
       {/* Dark Mode Toggle - Fixed on desktop only */}
       <div className="hidden md:block fixed top-6 right-6 z-50">
