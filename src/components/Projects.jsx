@@ -65,7 +65,7 @@ export default function Projects() {
             />
             
             {/* Gradient Overlay */}
-            <div className={`absolute inset-0 ${project.name === 'Owen' ? 'bg-black/20' : 'bg-gradient-to-t from-black/90 via-black/50 to-transparent'}`} />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
             
             {/* Content - Landscape Layout */}
             <div className="relative h-full flex flex-col justify-between p-3">
