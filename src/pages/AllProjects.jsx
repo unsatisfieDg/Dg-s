@@ -78,28 +78,26 @@ export default function AllProjects() {
               <div className={`absolute inset-0 ${project.name === 'Owen' ? 'bg-black/20' : 'bg-gradient-to-t from-black/90 via-black/50 to-transparent'}`} />
               
               {/* Content */}
-              <div className={`relative h-full flex flex-col ${project.name === 'Owen' ? 'items-center justify-center text-center' : 'justify-between'} p-4 sm:p-5 md:p-6`}>
+              <div className="relative h-full flex flex-col justify-between p-4 sm:p-5 md:p-6">
                 {/* Top Section - Label */}
-                {!project.color && (
-                  <div>
-                    <span className="inline-block px-2.5 sm:px-3 py-0.5 sm:py-1 text-[10px] sm:text-xs font-medium bg-blue-500/20 text-blue-400 rounded-full border border-blue-500/30">
-                      {project.type}
-                    </span>
-                  </div>
-                )}
+                <div>
+                  <span className="inline-block px-2.5 sm:px-3 py-0.5 sm:py-1 text-[10px] sm:text-xs font-medium bg-blue-500/20 text-blue-400 rounded-full border border-blue-500/30">
+                    {project.type}
+                  </span>
+                </div>
                 
-                {/* Middle/Bottom Section */}
-                <div className={project.name === 'Owen' ? 'flex flex-col items-center' : ''}>
+                {/* Bottom Section */}
+                <div>
                   <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 leading-tight">
                     {project.name}
                   </h3>
                   
-                  <p className={`text-xs sm:text-sm text-gray-300 mb-3 sm:mb-4 leading-relaxed line-clamp-3 ${project.name === 'Owen' ? 'text-center' : ''}`}>
+                  <p className="text-xs sm:text-sm text-gray-300 mb-3 sm:mb-4 leading-relaxed line-clamp-3">
                     {project.description}
                   </p>
                   
                   {/* Tech Stack Tags */}
-                  <div className={`flex flex-wrap ${project.name === 'Owen' ? 'justify-center' : ''} gap-1.5 sm:gap-2 mb-3 sm:mb-4`}>
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
                     {project.tags.map(tag => (
                       <span 
                         key={tag} 

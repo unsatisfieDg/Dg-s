@@ -68,18 +68,16 @@ export default function Projects() {
             <div className={`absolute inset-0 ${project.name === 'Owen' ? 'bg-black/20' : 'bg-gradient-to-t from-black/90 via-black/50 to-transparent'}`} />
             
             {/* Content - Landscape Layout */}
-            <div className={`relative h-full flex flex-col ${project.name === 'Owen' ? 'items-center justify-center text-center' : 'justify-between'} p-3`}>
+            <div className="relative h-full flex flex-col justify-between p-3">
               {/* Top Section - Label */}
-              {!project.color && (
-                <div>
-                  <span className="inline-block px-2 py-0.5 text-[10px] font-medium bg-blue-500/20 text-blue-400 rounded-full border border-blue-500/30">
-                    {project.type}
-                  </span>
-                </div>
-              )}
+              <div>
+                <span className="inline-block px-2 py-0.5 text-[10px] font-medium bg-blue-500/20 text-blue-400 rounded-full border border-blue-500/30">
+                  {project.type}
+                </span>
+              </div>
               
-              {/* Middle/Bottom Section - Title */}
-              <div className={project.name === 'Owen' ? 'flex flex-col items-center' : ''}>
+              {/* Bottom Section - Title */}
+              <div>
                 <h3 className="text-base sm:text-lg font-bold text-white mb-2 leading-tight">
                   {project.name}
                 </h3>
@@ -91,7 +89,7 @@ export default function Projects() {
                     : 'opacity-0 translate-y-4'
                 }`}>
                   {/* Tech Stack Tags */}
-                  <div className={`flex flex-wrap ${project.name === 'Owen' ? 'justify-center' : ''} gap-1.5 mb-2`}>
+                  <div className="flex flex-wrap gap-1.5 mb-2">
                     {project.tags.map(tag => (
                       <span 
                         key={tag} 
