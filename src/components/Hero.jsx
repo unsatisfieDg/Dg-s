@@ -76,7 +76,7 @@ export default function Hero() {
           </div>
 
           <p className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300">
-            Software Engineer | Front End Developer | AI Enthusiast
+            Software Engineer | Front End Developer | AI Integration Specialist
           </p>
 
           {/* Dark Mode Toggle - Below subtitle (Mobile only) */}
