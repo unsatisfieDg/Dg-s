@@ -7,12 +7,12 @@ export default function Projects() {
 
   const projects = [
     {
-      name: "MacroGenius",
+      name: "Owen",
       type: "Mobile App",
       description: "A premium nutrition tracker with the 'Owen' AI Assistant. Features include Midnight Teal dark mode, real-time macro tracking, barcode scanning, and a 9,000+ item offline SQLite database.",
-      url: "github.com/unsatisfieDg/MacroGenius",
+      url: "github.com/unsatisfieDg/Owen",
       tags: ["React Native", "Expo", "SQLite", "AI Assistant"],
-      image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80"
+      image: "https://images.unsplash.com/photo-1512428559087-560ad5185257?w=800&q=80"
     },
     {
       name: "Coffee Shop Reservation",
