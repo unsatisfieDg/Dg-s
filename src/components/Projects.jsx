@@ -12,7 +12,8 @@ export default function Projects() {
       description: "A premium nutrition tracker with the 'Owen' AI Assistant. Features include Midnight Teal dark mode, real-time macro tracking, barcode scanning, and a 9,000+ item offline SQLite database.",
       url: "github.com/unsatisfieDg/Owen",
       tags: ["React Native", "Expo", "SQLite", "AI Assistant"],
-      image: "https://images.unsplash.com/photo-1512428559087-560ad5185257?w=800&q=80"
+      image: "/owen_icon.png",
+      color: "#0f766e" // Midnight Teal
     },
     {
       name: "Coffee Shop Reservation",
@@ -50,17 +51,21 @@ export default function Projects() {
             onMouseEnter={() => setHoveredProject(index)}
             onMouseLeave={() => setHoveredProject(null)}
           >
-            {/* Background Image */}
+            {/* Background Image/Color */}
             <div 
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+              className="absolute inset-0 transition-transform duration-500 group-hover:scale-110"
               style={{ 
+                backgroundColor: project.color || '#111827',
                 backgroundImage: `url(${project.image})`,
-                filter: 'brightness(0.4)'
+                backgroundSize: project.name === 'Owen' ? '40%' : 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                filter: project.name === 'Owen' ? 'brightness(0.8)' : 'brightness(0.4)'
               }}
             />
             
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+            <div className={`absolute inset-0 ${project.name === 'Owen' ? 'bg-black/20' : 'bg-gradient-to-t from-black/90 via-black/50 to-transparent'}`} />
             
             {/* Content - Landscape Layout */}
             <div className="relative h-full flex flex-col justify-between p-3">
