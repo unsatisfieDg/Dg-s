@@ -99,19 +99,6 @@ export default function Home() {
                   <div className="flex-1 min-w-0">
                     <div className="flex justify-between items-start gap-4">
                       <div className="min-w-0 flex-1">
-                        <h3 className="font-semibold text-sm sm:text-base text-gray-900 dark:text-white">Software Engineer</h3>
-                        <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Riot Games</p>
-                      </div>
-                      <span className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 flex-shrink-0 whitespace-nowrap">2025</span>
-                    </div>
-                  </div>
-                </div>
-
-<div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-gray-900 dark:bg-gray-100 rounded-full mt-2 flex-shrink-0"></div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex justify-between items-start gap-4">
-                      <div className="min-w-0 flex-1">
                         <h3 className="font-semibold text-sm sm:text-base text-gray-900 dark:text-white">Bachelor of Science in Information Technology</h3>
                         <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">University of Northern Philippines</p>
                       </div>
@@ -170,19 +157,6 @@ export default function Home() {
               </h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-gray-900 dark:bg-gray-100 rounded-full mt-2 flex-shrink-0"></div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex justify-between items-start gap-4">
-                      <div className="min-w-0 flex-1">
-                        <h3 className="font-semibold text-sm sm:text-base text-gray-900 dark:text-white">Software Engineer</h3>
-                        <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Riot Games</p>
-                      </div>
-                      <span className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 flex-shrink-0 whitespace-nowrap">2025</span>
-                    </div>
-                  </div>
-                </div>
-
-<div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-gray-900 dark:bg-gray-100 rounded-full mt-2 flex-shrink-0"></div>
                   <div className="flex-1 min-w-0">
                     <div className="flex justify-between items-start gap-4">
