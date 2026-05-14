@@ -87,8 +87,8 @@ export default function Hero() {
           {/* Buttons - Stacked on mobile, side by side on desktop */}
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-3 sm:gap-4 mt-4 sm:mt-6">
             <a
-              href={`${import.meta.env.BASE_URL}RESUME.pdf`}
-              download
+              href={`${import.meta.env.BASE_URL}Danie Glenn Sapdaan Jr. -  Software Engineer.pdf`}
+              download="Danie_Glenn_Sapdaan_Jr_Resume.pdf"
               className="px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 bg-black dark:bg-white text-white dark:text-black rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors flex items-center justify-center gap-2 font-medium text-xs sm:text-sm md:text-base"
             >
               <Download size={16} className="sm:w-[18px] sm:h-[18px]" />
