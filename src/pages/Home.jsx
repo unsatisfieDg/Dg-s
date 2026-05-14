@@ -6,7 +6,7 @@ import TechStack from '../components/TechStack';
 import Projects from '../components/Projects';
 import Certifications from '../components/Certifications';
 import Footer from '../components/Footer';
-import DarkModeToggle from '../components/DarkModeToggle';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -61,6 +61,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950 transition-colors overflow-x-hidden">
+      {/* Navigation */}
+      <Navbar />
+
       {/* Parallax Background Layers */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
         {/* Layer 1 - Slowest */}
@@ -81,11 +84,6 @@ export default function Home() {
         />
       </div>
 
-      {/* Dark Mode Toggle - Fixed on desktop only */}
-      <div className="hidden md:block fixed top-6 right-6 z-50">
-        <DarkModeToggle />
-      </div>
-
       {/* Hero Section - Parallax Effect - FULL SCREEN */}
       <div
         className="min-h-screen flex items-center justify-center relative z-10"
@@ -102,12 +100,12 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
           {/* Left Column - Main Content */}
           <div className="lg:col-span-2 space-y-4 sm:space-y-6">
-            <div className="fade-in-scroll">
+            <div id="about" className="fade-in-scroll">
               <About />
             </div>
             
             {/* Experience Section - Shows on Mobile/Tablet only */}
-            <div className="lg:hidden bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-4 sm:p-6 fade-in-scroll">
+            <div id="experience-mobile" className="lg:hidden bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-4 sm:p-6 fade-in-scroll">
               <h2 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                 <span>💼</span> Experience
               </h2>
@@ -153,7 +151,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="fade-in-scroll">
+            <div id="skills" className="fade-in-scroll">
               <TechStack />
             </div>
             
@@ -182,7 +180,7 @@ export default function Home() {
           {/* Right Column - Sidebar */}
           <div className="space-y-4 sm:space-y-6">
             {/* Experience Section - Shows on Desktop only */}
-            <div className="hidden lg:block bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-4 sm:p-6 fade-in-scroll">
+            <div id="experience" className="hidden lg:block bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-4 sm:p-6 fade-in-scroll">
               <h2 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                 <span>💼</span> Experience
               </h2>
