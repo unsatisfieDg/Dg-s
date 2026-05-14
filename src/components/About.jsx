@@ -9,7 +9,7 @@ export default function About() {
         <p>
           I'm a software developer passionate about building meaningful digital solutions. 
           As a dedicated Information Technology graduate, I have hands-on experience in IT support, 
-          web development, and software programming, with strong skills in Python and JavaScript.
+          web development, and software programming, with skills in Python and JavaScript.
         </p>
        
         <p>
